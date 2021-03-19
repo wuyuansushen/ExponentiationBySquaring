@@ -13,15 +13,14 @@ namespace ExponentiationBySquaring
 
             int evenresult=1;
             int oddResult = Ivalue;
-
             while(exponent!=0)
             {
-                if (exponent % 2 == 1)
+                if ((exponent & 1) == 1)
                     evenresult *= oddResult;//Collect rest odd exponent
                 else
                 { }
                 oddResult *= oddResult;
-                exponent /= 2;
+                exponent=exponent>>1;
             }
 
             Console.WriteLine($"output: {evenresult}");
