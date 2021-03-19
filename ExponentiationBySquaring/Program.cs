@@ -15,7 +15,7 @@ namespace ExponentiationBySquaring
             int oddResult = Ivalue;
             while(exponent!=0)
             {
-                if ((exponent & 1) == 1)
+                if ((exponent & 1)==1)
                     evenresult *= oddResult;//Collect rest odd exponent
                 else
                 { }
