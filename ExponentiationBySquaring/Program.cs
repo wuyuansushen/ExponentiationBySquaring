@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace ExponentiationBySquaring
 {
@@ -11,8 +12,8 @@ namespace ExponentiationBySquaring
             Console.Write("Input exponent: ");
             int exponent = Convert.ToInt32(Console.ReadLine());
 
-            int evenresult=1;
-            int oddResult = Ivalue;
+            BigInteger evenresult=1;
+            BigInteger oddResult = Ivalue;
             while(exponent!=0)
             {
                 if ((exponent & 1)==1)
